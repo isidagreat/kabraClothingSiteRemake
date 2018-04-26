@@ -1,0 +1,28 @@
+/*CSS Reset*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+#wrapper{
+	margin: auto;
+	width: 1000px;
+}
+#navigation{
+	
+	margin-left: 29.75%;
+	border-bottom: 1px solid grey;
+	width: 405px;
+}
+#navigation a{
+	margin:20px;
+	text-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	font-size: 12px;
+}
+img{
+	margin-left:42.6%;
+	margin-top: 3.5%;
+}
+

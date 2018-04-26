@@ -1,0 +1,50 @@
+/*CSS reset*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+/*Styles the wrapper position to middele*/
+#wrapper{
+	margin: auto;
+	width: 1000px;
+}
+/*Styles top navigation*/
+#navigation{
+	
+	margin-left: 29.75%;
+	border-bottom: 1px solid grey;
+	width: 405px;
+}
+/*styles the links in the navigation*/
+#navigation a{
+	margin:20px;
+	text-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	font-size: 12px;
+}
+/*styles the top logo*/
+.logo{
+	margin-left:42.6%;
+	margin-top: 3.5%;
+}
+/*The following stylings will affect the banner Slideshow*/
+#slideShow{
+	width: 1000px;
+	height: 540px;
+}
+
+#slideShow img{
+	width: 800px;
+	margin-left: 7%;
+	margin-top: 4%;
+	position: absolute;
+}
+/*The following will style the products and positions*/
+#product{
+	margin-left: 0px;
+}
+#product img{
+	width: 275px;
+}

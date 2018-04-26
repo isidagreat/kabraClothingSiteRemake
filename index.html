@@ -1,0 +1,57 @@
+<!-- Isidro Arzate: This is a recreation of the Kabra Shop site -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kabra</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// The set Interval function will control the speed at which the slideshow moves
+			setInterval(function(){
+				$("#slideShow > img:first")
+				.fadeOut(1000)
+				.next()
+				.fadeIn(2000)
+				.end()
+				.appendTo("#slideShow");
+			}, 5000);
+			$("#product img").hover(function(){
+				$(this).fadeTo("slow", .5);
+				},	function(){
+				$(this).fadeTo("slow", 1);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- This Div contains all the content on the website -->
+	<div id="wrapper">
+		<!-- this Div contain all navigation links -->
+		<div id="navigation">
+			<a href="#" alt="un">Products</a>
+			<a href="#" alt="un">About US</a>
+			<a href="#" alt="un">F.A.Q</a>
+			<a href="#" alt="un">Contact</a>
+			<a href="#" alt="un">CART</a>
+		</div>
+		<!-- This image is the top logo -->
+		<img class="logo" src="images/Kabra_logo_wp_small.png" alt="Kabra">
+		<!-- This div will have banners that work as a slideShow -->
+		<div id="slideShow">
+			<img src="images/Kabra_Banner_1.jpg">
+			<img src="images/Kabra_Banner_2.jpg">
+			<img src="images/Kabra_Banner_4.jpg">
+		</div>
+		<!-- This div contains the website product -->
+		<div id="product">
+			<img src="images/kabra1.jpg">
+			<img src="images/kabra2.jpg">
+			<img src="images/kabra3.jpg">
+			<img src="images/kabra4.jpg">
+			<img src="images/kabra5.jpg">
+		</div>
+	</div>
+</body>
+</html>
